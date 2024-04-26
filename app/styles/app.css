@@ -254,9 +254,11 @@ aside li {
   display: flex;
   padding: 0.75rem 0;
   background: #3A2753;
-  border-radius: 15px;
+  border-radius: 25px;
   color: white;
-  object-fit: fill;
+  max-width: 70%;
+  align-items: center;
+  margin: auto;
 }
 
 .cart-line img{
@@ -273,8 +275,21 @@ aside li {
   
 }
 
-.cart-summary-page {
+.cart-subtotal {
+  color: white;
+  text-align: left;
   position: relative;
+}
+
+/*.cart-summary-page {
+  position: relative;
+}*/
+
+.cart-summary-page button {
+  margin-left: 0px;
+  margin-top: 0px;
+  border: white;
+  color: white;
 }
 
 .cart-summary-aside {
@@ -289,7 +304,7 @@ aside li {
 
 .cart-line-quantiy {
   display: flex;
-  position: absolute;
+  
   
 }
 
@@ -297,6 +312,11 @@ aside li {
   background:#D2B9EC;
   border-radius: 5px;
   border: white;
+  color: white;
+  margin-inline: 10px;
+  display: inline-block;
+  text-align: center;
+  
 }
 
 

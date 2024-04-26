@@ -99,7 +99,7 @@ function CartLineItem({layout, line}) {
             <strong>{product.title}</strong>
           </p>
         </Link>
-        <CartLinePrice line={line} as="span" />
+        <CartLinePrice line={line} as="span" class="price"/>
         <ul>
           {selectedOptions.map((option) => (
             <li key={option.name}>
@@ -170,7 +170,7 @@ function CartLineRemoveButton({lineIds}) {
       action={CartForm.ACTIONS.LinesRemove}
       inputs={{lineIds}}
     >
-      <button type="submit">Remove</button>
+      <button type="submit"> m</button>
     </CartForm>
   );
 }
@@ -194,7 +194,7 @@ function CartLineQuantity({line}) {
           name="decrease-quantity"
           value={prevQuantity}
         >
-          <span>&#8722; </span>
+          <span>&#8722;</span>
         </button>
       </CartLineUpdateButton>
       &nbsp;
